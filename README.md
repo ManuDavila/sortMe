@@ -6,7 +6,7 @@ sortMe
  
  <a href="https://github.com/ManuDavila/sortTable" target="_blank">Descargar en GITHUB</a>
  
-<p>La función sortMe permite ordenar los elementos seleccionados ascendente o descendentemente, a través de de números, letras o letras y números.</p>
+<p>La función sortMe permite ordenar los elementos seleccionados ascendente o descendentemente, a través de números, letras o letras y números.</p>
 <p>
 El primer parámetro de la función acepta uno de los siguientes valores:
 <ul>
