@@ -1,0 +1,142 @@
+<!-- By http://jquery-manual.blogspot.com -->
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title>sortMe Jquery</title>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="sortMe.js"></script>
+
+<script>
+$(function(){
+$("#btn-1").click(function(){
+$("#list-1 li").sortMe("number", {reverse: false});
+});
+
+$("#btn-2").click(function(){
+$("#list-2 li").sortMe("letter", {reverse: false});
+});
+
+$("#btn-3").click(function(){
+$("#box p").sortMe("both", {reverse: true});
+});
+});
+</script>
+
+ <style>
+ @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+ body{
+ font-family: 'Ubuntu Mono', sans-serif;
+ background: #DEE3F0;
+ }
+ 
+ pre
+ {
+ background: #FFFFFF;
+ padding: 10px;
+ }
+ </style>
+ </head>
+ <body>
+ <h1>SortMe Jquery</h1>
+ <h3>By <a href="http://jquery-manual.blogspot.com" target="_blank">http://jquery-manual.blogspot.com</a></h3>
+ 
+ <a href="https://github.com/ManuDavila/sortTable" target="_blank">Descargar en GITHUB</a>
+ 
+<p>La función sortMe permite ordenar los elementos seleccionados ascendente o descendentemente, a través de de números, letras o letras y números.</p>
+<p>
+El primer parámetro de la función acepta uno de los siguientes valores:
+<ul>
+<li><strong>number</strong>: Ordena los elementos a partir de números.</li>
+<li><strong>letter</strong>: Ordena los elementos a partir de letras, incluyendo caracteres latinos.</li>
+<li><strong>both</strong>: Ordena los elementos a partir de letras y números.</li>
+</ul>
+<br />
+El segundo parámetro(opcional) contiene las siguientes opciones:
+<ul>
+<li><strong>reverse</strong>: <i>false | true</i> . Por defecto se encuentra en false, indica si el orden es ascendente o descendente.</li>
+</ul>
+</p>
+<center>
+
+<table>
+<tr>
+<td>
+<ul id="list-1">
+<li>23</li>
+<li>120</li>
+<li>33</li>
+<li>55</li>
+<li>12</li>
+<li>6</li>
+<li>1</li>
+<li>5</li>
+<li>88</li>
+</ul>
+<td>
+<button type="button" id="btn-1">DEMO 1</button>
+<pre class="brush: js">
+$("#btn-1").click(function(){
+$("#list-1 li").sortMe("number", {reverse: false});
+});
+</pre>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<table>
+<tr>
+<td>
+<ul id="list-2">
+<li>Sort</li>
+<li>Bind</li>
+<li>jQuery</li>
+<li>List</li>
+<li>Order</li>
+<li>Action</li>
+<li>Letter</li>
+<li>Number</li>
+<li>Both</li>
+</ul>
+<td>
+<button type="button" id="btn-2">DEMO 2</button>
+<pre class="brush: js">
+$("#btn-2").click(function(){
+$("#list-2 li").sortMe("letter", {reverse: false});
+});
+</pre>
+</td>
+</tr>
+</table>
+
+<hr />
+
+<table>
+<tr>
+<td>
+<div id="box">
+<p>image-30.jpg</p>
+<p>image-12.jpg</p>
+<p>image-8.jpg</p>
+<p>image-1.jpg</p>
+<p>image-7.jpg</p>
+<p>image-14.jpg</p>
+<p>image-99.jpg</p>
+<p>image-88.jpg</p>
+<p>image-33.jpg</p>
+</div>
+<td>
+<button type="button" id="btn-3">DEMO 3</button>
+<pre class="brush: js">
+$("#btn-3").click(function(){
+$("#box p").sortMe("both", {reverse: true});
+});
+</pre>
+</td>
+</tr>
+</table>
+</center>
+<br /><br /><br /><br />
+</body>
+</html>
